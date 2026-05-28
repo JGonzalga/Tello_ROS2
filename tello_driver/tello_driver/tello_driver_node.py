@@ -188,7 +188,8 @@ class TelloDriverNode(Node):
     def _emergency_cb(self, _):
         self.get_logger().warn('EMERGENCY STOP!')
         try:
-            self.tello.emergency()
+            #self.tello.emergency()
+            node.destroy_node()
             self.is_flying = False
         except Exception as e:
             self.get_logger().error(f'Emergency error: {e}')
