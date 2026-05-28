@@ -97,9 +97,9 @@ mkdir -p ~/tello_ws/src
 cd ~/tello_ws/src
 
 # Clonar el repositorio (o copiar la carpeta tello_driver aquí)
-git clone https://github.com/JGonzalga/DJI_Tello_ROS2.git
+git clone https://github.com/JGonzalga/Tello_ROS2.git
 # Mueve el paquete al src del workspace:
-cp -r DJI_Tello_ROS2/tello_driver ~/tello_ws/src/
+cp -r Tello_ROS2/tello_driver ~/tello_ws/src/
 ```
 
 ---
@@ -112,8 +112,8 @@ cd ~/tello_ws
 # Sourcing de ROS2 (añadir al ~/.bashrc para no repetirlo)
 source /opt/ros/humble/setup.bash
 
-# Compilar solo este paquete
-colcon build --packages-select tello_driver --symlink-install
+# Compilar
+colcon build 
 
 # Hacer source del overlay generado
 source install/setup.bash
