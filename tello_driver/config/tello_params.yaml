@@ -1,0 +1,16 @@
+# tello_driver default parameters
+# ─────────────────────────────────────────────────────
+# Load with: --params-file config/tello_params.yaml
+# or through the launch file.
+
+tello_driver:
+  ros__parameters:
+    tello_ip: "192.168.10.1"    # Default drone IP (AP mode)
+    stream_fps: 30              # Camera frames per second
+    frame_width: 960            # Output frame width  (px)
+    frame_height: 720           # Output frame height (px)
+    cmd_vel_timeout: 0.5        # Stop motors if no cmd_vel after N seconds
+
+tello_teleop_key:
+  ros__parameters:
+    speed: 0.6                  # Teleoperation speed  (0.0 – 1.0)

@@ -1,0 +1,5 @@
+# Python dependencies for tello_driver ROS2 package
+# Install with:  pip install -r requirements.txt
+
+djitellopy>=2.5.0       # Tello SDK wrapper
+opencv-python>=4.5.0    # Video frame processing
